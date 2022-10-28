@@ -924,22 +924,34 @@
                 "height": 100
               },
               "position": {
-                "x": 513,
+                "x": 515,
                 "y": 323
               },
               "angle": 0,
               "id": "8fabc9fb-8a61-4074-af27-e977b39b3b41",
               "z": 34,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "OTT fälschen",
+                  "description": "Durch interne Angriff wird die OOT manipuliert",
+                  "mitigation": "verschlüsseln übertragen",
+                  "threatId": "9ad6933b-cb87-4355-b6c0-ad6f2c6a684e"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Allsecure\nMobile Phone\nOTT Service"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1204,22 +1216,34 @@
                 "height": 100
               },
               "position": {
-                "x": 382,
-                "y": 570
+                "x": 374,
+                "y": 549
               },
               "angle": 0,
               "id": "bb4aecf3-7412-42b2-9662-22457a9c6ffd",
               "z": 41,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "title": "AdminRechte",
+                  "description": "Angreifer übernimmt Report Tool durch Klartext PW auslesen & kann damit Reports manipulieren",
+                  "mitigation": "PW verschlüsseln",
+                  "threatId": "09f5d0fa-da00-4cea-b269-bb46ee7684be"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Export\nManagement\nReport"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1230,22 +1254,34 @@
                 "height": 80
               },
               "position": {
-                "x": 308,
-                "y": 713
+                "x": 337,
+                "y": 716
               },
               "angle": 0,
               "id": "fe444a71-2d6a-4707-a700-20f70f19528e",
               "z": 42,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Signatur einschleusen",
+                  "type": "Tampering",
+                  "description": "Angreifer schleust falsche Signatur in DB",
+                  "mitigation": "DB mit Admin Rechten isolieren",
+                  "threatId": "23ed8d5b-355d-42c0-8d3b-aed2f1f31bf1"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Signaturen"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1298,8 +1334,7 @@
                 "id": "f94b1ef0-9825-4d8d-bada-c643f5f12cf8"
               },
               "target": {
-                "x": 381,
-                "y": 617
+                "id": "bb4aecf3-7412-42b2-9662-22457a9c6ffd"
               },
               "vertices": [],
               "id": "1df46668-b0b5-4cc4-ad7e-065a375c7f39",
