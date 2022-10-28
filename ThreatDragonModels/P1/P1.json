@@ -483,16 +483,28 @@
               "angle": 0,
               "id": "292edeb6-b810-4dda-96c1-03c5d640f9c9",
               "z": 21,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Man in the Middle",
+                  "description": "Interner Mitarbeiter setzt sich zwischen den Dienst und schickt falsche Anfragen weiter",
+                  "mitigation": "Admin Rechte auf Dienst anrichten",
+                  "threatId": "6bec2266-24e6-409a-98a0-b25fe7d3a484"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2Faktor Authen\ntifizuerugsdien\nst"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1218,7 +1230,7 @@
                 "height": 80
               },
               "position": {
-                "x": 307,
+                "x": 308,
                 "y": 713
               },
               "angle": 0,
@@ -1444,7 +1456,7 @@
                 "height": 80
               },
               "position": {
-                "x": 939,
+                "x": 940,
                 "y": 374
               },
               "angle": 0,
