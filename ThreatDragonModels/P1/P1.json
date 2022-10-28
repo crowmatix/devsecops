@@ -27,16 +27,28 @@
               "angle": 0,
               "id": "5ce51f95-97ad-427a-b154-a4dab1533bb4",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "LogInfos zerstören",
+                  "type": "Tampering",
+                  "description": "Angreifer kann Logdateien auf DB löschen",
+                  "mitigation": "Backup der Logdateien",
+                  "threatId": "10ccd0a1-4399-4eaa-a2d0-e43f82dc9d34"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Log Datenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -48,21 +60,33 @@
               },
               "position": {
                 "x": 1,
-                "y": 176
+                "y": 156
               },
               "angle": 0,
               "id": "47b2fbbf-3497-466c-b944-5076d8727288",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "description": "Benutzer greift mit falscher IP Adresse auf Login System zu",
+                  "title": "IP Spoofing",
+                  "mitigation": "Telefonnummern Check",
+                  "threatId": "b7f992f3-695f-40ba-9330-cf0798fbb0a2"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Benutzer"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -79,16 +103,28 @@
               "angle": 0,
               "id": "ba7efcf7-5cb8-4bcf-b403-7218a4cebf3f",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "DDoS",
+                  "description": "Bot Netz schickt viele Request an Login System",
+                  "mitigation": "Load Balancer",
+                  "threatId": "f6f0bf83-f0ec-4b67-a28b-0ad51cfe170c"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Login System\nWebapp\n+Mobileapp"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -203,7 +239,12 @@
                 "x": 136,
                 "y": 332
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 203,
+                  "y": 172
+                }
+              ],
               "id": "65824ac3-0ad0-411f-bdb7-f83bbc44d129",
               "z": 8,
               "attrs": {}
@@ -372,22 +413,34 @@
                 "height": 80
               },
               "position": {
-                "x": 923,
+                "x": 925,
                 "y": 44
               },
               "angle": 0,
               "id": "95d19a5c-ad2e-44ac-b981-e5aa05699ae1",
               "z": 19,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Nummernaustausch",
+                  "description": "Angreifer ändert Telefonnummer in Datenbank",
+                  "mitigation": "Verschlüsselung",
+                  "threatId": "8481cd2e-fa79-495a-ad59-9189cd516f27"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Datenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -891,16 +944,28 @@
               "angle": 0,
               "id": "481ffbc6-2f30-4cbf-aca0-dd7f94f787b3",
               "z": 35,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Telefonummern ändern",
+                  "type": "Tampering",
+                  "description": "Angreifer ändert Telefonummern auf der Datenbank, da unverschlüsselt",
+                  "mitigation": "Verschlüsselung&Signatur",
+                  "threatId": "a5c89cd4-74b2-4fc3-888f-8275a38b8a44"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Telefonummern DB"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1089,22 +1154,34 @@
                 "height": 80
               },
               "position": {
-                "x": 128,
-                "y": 585
+                "x": 140,
+                "y": 575
               },
               "angle": 0,
               "id": "f94b1ef0-9825-4d8d-bada-c643f5f12cf8",
               "z": 40,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Repudiation",
+                  "title": "Laptop ungesperrt",
+                  "description": "Mitarbeiter in der Firma benutz ungesperrten Laptop des Managen, um Report zu ändern",
+                  "mitigation": "Computer sperren bei Abwesenheit",
+                  "threatId": "6f4e5c58-7320-4818-958d-85d0e9b3c73a"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Manager"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1141,8 +1218,8 @@
                 "height": 80
               },
               "position": {
-                "x": 367,
-                "y": 728
+                "x": 307,
+                "y": 713
               },
               "angle": 0,
               "id": "fe444a71-2d6a-4707-a700-20f70f19528e",
@@ -1173,16 +1250,28 @@
               "angle": 0,
               "id": "0f23a352-8b2d-4998-a397-a3475056afa9",
               "z": 43,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "description": "Angreifer bekommt monatliche Reports der Firma",
+                  "mitigation": "Verschlüsselung",
+                  "title": "Report stehlen",
+                  "threatId": "6649cada-c6b2-411f-8149-340c1fbeffa7"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Management Reports"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1355,22 +1444,34 @@
                 "height": 80
               },
               "position": {
-                "x": 938,
+                "x": 939,
                 "y": 374
               },
               "angle": 0,
               "id": "10074b78-a1c5-4040-ba04-679169bc18c8",
               "z": 48,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Information Events auslesen",
+                  "type": "Information disclosure",
+                  "description": "Angreifer bekommt Userrechte auf DB & kann Events auslesen",
+                  "mitigation": "Admin Rechte einstellen",
+                  "threatId": "5c2932fd-25cc-4279-82f5-74730e4a402a"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Information& Events"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1382,21 +1483,33 @@
               },
               "position": {
                 "x": 720,
-                "y": 367
+                "y": 366
               },
               "angle": 0,
               "id": "e9b802e0-a056-4bc5-920f-45ac3b510530",
               "z": 49,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "title": "Admin Rechte",
+                  "description": "Angreifer bekommt Admin Rechte auf Siem System durch ausprobieren",
+                  "mitigation": "Starke PW wählen",
+                  "threatId": "3bd97956-2b8a-476f-a945-1ca506ca31eb"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "SIEM System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
