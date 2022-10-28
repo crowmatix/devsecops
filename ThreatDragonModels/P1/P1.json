@@ -1269,7 +1269,7 @@
                   "title": "Signatur einschleusen",
                   "type": "Tampering",
                   "description": "Angreifer schleust falsche Signatur in DB",
-                  "mitigation": "DB mit Admin Rechten isolieren",
+                  "mitigation": "DB mit Admin Rechten isolieren\nsenkt auf Low",
                   "threatId": "23ed8d5b-355d-42c0-8d3b-aed2f1f31bf1"
                 }
               ],
@@ -1305,8 +1305,8 @@
                   "severity": "High",
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
-                  "description": "Angreifer bekommt monatliche Reports der Firma",
-                  "mitigation": "Verschlüsselung",
+                  "description": "Angreifer bekommt Zugriff auf DB, da diese nicht gesperrt wurde & liest monatliche Reports der Firma aus",
+                  "mitigation": "DB mit PW schützen",
                   "title": "Report stehlen",
                   "threatId": "6649cada-c6b2-411f-8149-340c1fbeffa7"
                 }
