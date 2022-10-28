@@ -1542,9 +1542,9 @@
                   "severity": "High",
                   "modelType": "STRIDE",
                   "type": "Elevation of privilege",
-                  "title": "Admin Rechte",
-                  "description": "Angreifer bekommt Admin Rechte auf Siem System durch ausprobieren",
-                  "mitigation": "Starke PW wählen",
+                  "title": "Brute Force Angriff",
+                  "description": "Angreifer bekommt Admin Rechte auf Siem System durch ausprobieren des PW.",
+                  "mitigation": "Pw Generatoren nutzen\n\nSenkt Risiko auf Low",
                   "threatId": "3bd97956-2b8a-476f-a945-1ca506ca31eb"
                 }
               ],
