@@ -1192,8 +1192,8 @@
                   "modelType": "STRIDE",
                   "type": "Repudiation",
                   "title": "Laptop ungesperrt",
-                  "description": "Mitarbeiter in der Firma benutz ungesperrten Laptop des Managen, um Report zu ändern",
-                  "mitigation": "Computer sperren bei Abwesenheit",
+                  "description": "Mitarbeiter in der Firma benutzt ungesperrten Laptop des Managers, um Report zu ändern",
+                  "mitigation": "Computer sperren bei Abwesenheit.\n\nSenkt Risiko auf Low",
                   "threatId": "6f4e5c58-7320-4818-958d-85d0e9b3c73a"
                 }
               ],
@@ -1229,9 +1229,9 @@
                   "severity": "Medium",
                   "modelType": "STRIDE",
                   "type": "Elevation of privilege",
-                  "title": "AdminRechte",
-                  "description": "Angreifer übernimmt Report Tool durch Klartext PW auslesen & kann damit Reports manipulieren",
-                  "mitigation": "PW verschlüsseln",
+                  "title": "ShoulderSurfing",
+                  "description": "Interner Angreifer übernimmt Report Tool durch Klartext PW auslesen beim Admin & kann damit Reports manipulieren oder Tool stoppen",
+                  "mitigation": "PW Generator benutzen& aufmerksam sein/ Sichtschutz beim Bildschirm benutzen\n\nSenkt Risiko auf Low",
                   "threatId": "09f5d0fa-da00-4cea-b269-bb46ee7684be"
                 }
               ],
@@ -1505,7 +1505,7 @@
                   "modelType": "STRIDE",
                   "title": "Information Events auslesen",
                   "type": "Information disclosure",
-                  "description": "Angreifer bekommt Userrechte auf DB & kann Events auslesen",
+                  "description": "Interner Angreifer bekommt durch Userrechte  Zugriff auf DB & kann Events dort auslesen.",
                   "mitigation": "Admin Rechte einstellen",
                   "threatId": "5c2932fd-25cc-4279-82f5-74730e4a402a"
                 }
