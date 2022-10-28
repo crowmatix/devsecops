@@ -31,12 +31,12 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "modelType": "STRIDE",
                   "title": "LogInfos zerstören",
                   "type": "Tampering",
-                  "description": "Angreifer kann Logdateien auf DB löschen",
-                  "mitigation": "Backup der Logdateien",
+                  "description": "Angreifer kann Logdateien auf DB löschen.",
+                  "mitigation": "Backup der Logdateien auf einer Backup DB um Logdateien nicht zu verlieren.\n\nSenkt Risiko auf Low da kein Single Point of Failure.",
                   "threatId": "10ccd0a1-4399-4eaa-a2d0-e43f82dc9d34"
                 }
               ],
@@ -107,12 +107,12 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
                   "title": "DDoS",
-                  "description": "Bot Netz schickt viele Request an Login System",
-                  "mitigation": "Load Balancer",
+                  "description": "Bot Netz schickt viele Request an Login System, dass das System damit stilllegt.",
+                  "mitigation": "Load Balancer vor dem System einsetzen, der Anfragen verteilt.\n\nSenkt Risiko auf Low",
                   "threatId": "f6f0bf83-f0ec-4b67-a28b-0ad51cfe170c"
                 }
               ],
@@ -487,12 +487,12 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "modelType": "STRIDE",
                   "type": "Tampering",
                   "title": "Man in the Middle",
-                  "description": "Interner Mitarbeiter setzt sich zwischen den Dienst und schickt falsche Anfragen weiter",
-                  "mitigation": "Admin Rechte auf Dienst anrichten",
+                  "description": "Interner Mitarbeiter setzt sich zwischen den Dienst und schickt falsche Anfragen weiter, System wird somit lahmgelegt",
+                  "mitigation": "Admin Rechte auf Dienst anrichten und nur wenige Mitarbeiter Rechte geben.\n\nSenkt Risiko auf Medium.",
                   "threatId": "6bec2266-24e6-409a-98a0-b25fe7d3a484"
                 }
               ],
@@ -938,8 +938,8 @@
                   "modelType": "STRIDE",
                   "type": "Tampering",
                   "title": "OTT fälschen",
-                  "description": "Durch interne Angriff wird die OOT manipuliert",
-                  "mitigation": "verschlüsseln übertragen",
+                  "description": "Durch interne Angriff wird die OOT manipuliert und falsch weitergeschickt",
+                  "mitigation": "Datenfluss verschlüsselt übertragen\n\nSenkt Risiko auf Low",
                   "threatId": "9ad6933b-cb87-4355-b6c0-ad6f2c6a684e"
                 }
               ],
@@ -976,8 +976,8 @@
                   "modelType": "STRIDE",
                   "title": "Telefonummern ändern",
                   "type": "Tampering",
-                  "description": "Angreifer ändert Telefonummern auf der Datenbank, da unverschlüsselt",
-                  "mitigation": "Verschlüsselung&Signatur",
+                  "description": "Angreifer ändert Telefonummern auf der Datenbank, da diese unverschlüsselt dort liegen.",
+                  "mitigation": "Telefonummern verschlüsseln& signieren\n\nSenkt Risiko auf Low",
                   "threatId": "a5c89cd4-74b2-4fc3-888f-8275a38b8a44"
                 }
               ],
